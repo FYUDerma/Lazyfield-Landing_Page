@@ -4,9 +4,9 @@
 
 ## Sections
 
-### About
-### Feature
-### Team
+- About
+- Feature
+- Team
 
 ## How to install
 
