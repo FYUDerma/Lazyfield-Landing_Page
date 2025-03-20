@@ -4,7 +4,7 @@ import { Footer } from "./components/Footer"; // Updated
 import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar"; // Updated
 import { ScrollToTop } from "./components/ScrollToTop";
-import { Team } from "./components/Team";
+import { Team } from "./components/Team"; // Updated
 import "./App.css";
 
 function App() {

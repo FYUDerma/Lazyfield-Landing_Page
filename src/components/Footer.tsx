@@ -26,7 +26,7 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://github.com/FYUDerma/Lazyfield"
               className="opacity-60 hover:opacity-100"
             >
               Github
