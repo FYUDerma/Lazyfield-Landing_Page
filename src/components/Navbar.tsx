@@ -12,11 +12,12 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
+import lzicon from "@/assets/lzicon.png";
+
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-import { LogoIcon } from "./Icons";
 
 interface RouteProps {
   href: string;
@@ -50,7 +51,11 @@ export const Navbar = () => {
               href="/"
               className="ml-2 font-bold text-xl flex"
             >
-              <LogoIcon />
+              <img 
+                src={lzicon}
+                alt="Lazyfield Icon"
+                className="w-8 h-8 mr-2"
+              />
               Lazyfield
             </a>
           </NavigationMenuItem>
@@ -75,7 +80,7 @@ export const Navbar = () => {
               <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    Shadcn/React
+                    Lazyfield
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
