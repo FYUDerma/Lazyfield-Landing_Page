@@ -7,7 +7,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Linkedin } from "lucide-react";
+import team1 from "@/assets/team/team1.jpg";
 
 interface TeamProps {
   imageUrl: string;
@@ -23,72 +24,25 @@ interface SociaNetworkslProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "https://i.pravatar.cc/150?img=35",
-    name: "Emma Smith",
-    position: "Product Manager",
+    imageUrl: team1,
+    name: "Zakaria AATTACHE",
+    position: "Web Developer",
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
-    ],
-  },
-  {
-    imageUrl: "https://i.pravatar.cc/150?img=60",
-    name: "John Doe",
-    position: "Tech Lead",
-    socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
-    ],
-  },
-  {
-    imageUrl: "https://i.pravatar.cc/150?img=36",
-    name: "Ashley Ross",
-    position: "Frontend Developer",
-    socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
+        url: "https://www.linkedin.com/in/zakaria-aattache/",
+      }
     ],
   },
   {
     imageUrl: "https://i.pravatar.cc/150?img=17",
-    name: "Bruce Rogers",
-    position: "Backend Developer",
+    name: "Benoit MARIN",
+    position: "Web Developer",
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
+        url: "https://www.linkedin.com/in/beno%C3%AEt-marin/",
+      }
     ],
   },
 ];
@@ -98,21 +52,15 @@ export const Team = () => {
     switch (iconName) {
       case "Linkedin":
         return <Linkedin size="20" />;
-
-      case "Facebook":
-        return <Facebook size="20" />;
-
-      case "Instagram":
-        return <Instagram size="20" />;
-    }
   };
+};
 
   return (
     <section
       id="team"
       className="container py-24 sm:py-32"
     >
-      <h2 className="text-3xl md:text-4xl font-bold">
+      <h2 className="text-3xl md:text-4xl font-bold flex-col justify-center items-center text-center">
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           Our Dedicated{" "}
         </span>
@@ -120,18 +68,20 @@ export const Team = () => {
       </h2>
 
       <p className="mt-4 mb-10 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+        Meet our team who work to bring our vision to life. 
+        Each member brings unique skills and expertise to the table, ensuring the progress of our projects.
       </p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 gap-y-2">
         {teamList.map(
           ({ imageUrl, name, position, socialNetworks }: TeamProps) => (
             <Card
-              key={name}
-              className="bg-muted/50 relative mt-8 flex flex-col justify-center items-center"
+            key={name}
+            className={`bg-muted/50 relative mt-8 flex flex-col justify-center items-center max-w-xs h-auto w-80 ${
+              name === "Zakaria AATTACHE" ? "ml-auto" : ""
+            }`}
             >
-              <CardHeader className="mt-8 flex justify-center items-center pb-2">
+              <CardHeader className="mt-16 flex flex-col justify-center items-center pb-2">
                 <img
                   src={imageUrl}
                   alt={`${name} ${position}`}
@@ -143,8 +93,18 @@ export const Team = () => {
                 </CardDescription>
               </CardHeader>
 
-              <CardContent className="text-center pb-2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <CardContent className="flex flex-col justify-center items-center text-center pb-2 flex-grow">
+                {name === "Zakaria AATTACHE" ? (
+                  <ol>
+                    <li>Back-End Developper</li>
+                    <li>Database Specialist</li>
+                  </ol>
+                ) : name === "Benoit MARIN" ? (
+                  <ol>
+                    <li>Front-End Developper</li>
+                    <li>UI/UX Designer</li>
+                  </ol>
+                ) : null}
               </CardContent>
 
               <CardFooter>
