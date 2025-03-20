@@ -18,19 +18,19 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Responsive Design",
+    title: "Upgrade Sytem",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
     image: image4,
   },
   {
-    title: "Intuitive user interface",
+    title: "Progression",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
     image: image3,
   },
   {
-    title: "AI-Powered insights",
+    title: "Authentications",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
     image: image,
@@ -38,15 +38,13 @@ const features: FeatureProps[] = [
 ];
 
 const featureList: string[] = [
-  "Dark/Light theme",
-  "Reviews",
-  "Features",
-  "Pricing",
-  "Contact form",
-  "Our team",
+  "Authentification",
   "Responsive design",
-  "Newsletter",
-  "Minimalist",
+  "Upgrade system",
+  "Progression saving",
+  "User-friendly",
+  "Idle game",
+  "Clicker game",
 ];
 
 export const Features = () => {

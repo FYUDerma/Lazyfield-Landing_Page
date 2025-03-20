@@ -1,9 +1,9 @@
-import { About } from "./components/About";
+import { About } from "./components/About"; // Updated
 import { Features } from "./components/Features";
 import { Footer } from "./components/Footer"; // Updated
-import { Hero } from "./components/Hero";
+import { Hero } from "./components/Hero"; 
 import { Navbar } from "./components/Navbar"; // Updated
-import { ScrollToTop } from "./components/ScrollToTop";
+import { ScrollToTop } from "./components/ScrollToTop"; // Updated
 import { Team } from "./components/Team"; // Updated
 import "./App.css";
 
