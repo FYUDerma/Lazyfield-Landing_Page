@@ -6,9 +6,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import image from "../assets/growth.png";
-import image3 from "../assets/reflecting.png";
-import image4 from "../assets/looking-ahead.png";
+import image from "../assets/upgrade.png";
+import image3 from "../assets/progression.png";
+import image4 from "../assets/register.png";
 
 interface FeatureProps {
   title: string;
@@ -18,22 +18,22 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Upgrade Sytem",
+    title: "Améliorations",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image4,
+      "Améliorez votre récolte et débloquez de nouvelles fonctionnalités pour progresser plus rapidement.",
+    image: image,
   },
   {
     title: "Progression",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Sauvegardez votre progression et continuez à jouer à tout moment sur n'importe quel navigateur.",
     image: image3,
   },
   {
     title: "Authentications",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image,
+      "Créez un compte pour sauvegarder votre progression et débloquer des fonctionnalités supplémentaires.",
+    image: image4,
   },
 ];
 

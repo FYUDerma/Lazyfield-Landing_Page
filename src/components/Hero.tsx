@@ -1,6 +1,5 @@
 import { Button } from "./ui/button";
 import { buttonVariants } from "./ui/button";
-import { HeroCards } from "./HeroCards";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 import gameImage from "@/assets/game.png";
@@ -23,7 +22,13 @@ export const Hero = () => {
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <Button className="w-full md:w-1/3">Get Started</Button>
+          <a
+            rel="noreferrer noopener"
+            href="https://youtu.be/XXI8MPY1tTM"
+            target="_blank"
+          >
+            <Button className="w-full md:w-1/3">Demo Video</Button>
+          </a>
 
           <a
             rel="noreferrer noopener"

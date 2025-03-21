@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/card";
 import { Linkedin } from "lucide-react";
 import team1 from "@/assets/team/team1.jpg";
+import team2 from "@/assets/team/team2.jpg";
 
 interface TeamProps {
   imageUrl: string;
@@ -35,7 +36,7 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=17",
+    imageUrl: team2,
     name: "Benoit MARIN",
     position: "Web Developer",
     socialNetworks: [
