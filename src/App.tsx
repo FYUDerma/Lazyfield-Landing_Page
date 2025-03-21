@@ -1,10 +1,10 @@
-import { About } from "./components/About"; // Updated
+import { About } from "./components/About";
 import { Features } from "./components/Features";
-import { Footer } from "./components/Footer"; // Updated
+import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero"; 
-import { Navbar } from "./components/Navbar"; // Updated
-import { ScrollToTop } from "./components/ScrollToTop"; // Updated
-import { Team } from "./components/Team"; // Updated
+import { Navbar } from "./components/Navbar";
+import { ScrollToTop } from "./components/ScrollToTop";
+import { Team } from "./components/Team";
 import "./App.css";
 
 function App() {
